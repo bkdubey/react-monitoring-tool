@@ -22,7 +22,8 @@ import Charts from "../Charts";
 import Calendar from "../Calendar";
 import Tables from "../Tables";
 import VM from "../VM";
-
+import Services from "../Services";
+import Environment  from "../Environment";
 
 const Main = ({ mobileNavVisibility, hideMobileMenu, history }) => {
   history.listen(() => {
@@ -46,9 +47,11 @@ const Main = ({ mobileNavVisibility, hideMobileMenu, history }) => {
           <Route path="/components" component={Components} />
           <Route path="/profile" component={UserProfile} />
           <Route path="/forms" component={Forms} />
-          <Route path="/tables" component={Tables} />
+          <Route path="/Environment"  component={Environment} />
           <Route path="/maps" component={MapsPage} />
           <Route path="/VM" component={VM} />
+          <Route path="/Services" component={Services} />
+
           <Route path="/charts" component={Charts} />
           <Route path="/calendar" component={Calendar} />
           <Footer />

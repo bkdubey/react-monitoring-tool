@@ -41,12 +41,12 @@ class Nav extends Component {
               <ul className="nav">
                 <li
                   className={
-                    this.isPathActive("/tables/regular-tables")
+                    this.isPathActive("/Environment/EnvironmentDetail")
                       ? "active"
                       : null
                   }
                 >
-                  <Link to="/tables/regular-tables">Envrionment</Link>
+                  <Link to="/Environment/EnvironmentDetail">Envrionment</Link>
                 </li>
 
                 <li
@@ -59,7 +59,18 @@ class Nav extends Component {
                         <Link to="/VM/VMMonitor">VM status</Link>
                  </li>
 
-                <li
+                  <li
+                                  className={
+                                    this.isPathActive("/Services/ServiceMonitor")
+                                      ? "active"
+                                      : null
+                                  }
+                                >
+                        <Link to="/Services/ServiceMonitor">Service status</Link>
+                 </li>
+
+
+              { /* <li
                   className={
                     this.isPathActive("/components/buttons") ? "active" : null
                   }
@@ -113,7 +124,7 @@ class Nav extends Component {
                   }
                 >
                   <Link to="/components/typography">Typography</Link>
-                </li>
+                </li>*/ }
               </ul>
             </div>
           </Collapse>
